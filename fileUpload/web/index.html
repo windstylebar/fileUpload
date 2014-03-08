@@ -1,0 +1,107 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<!-- lang="zh-CN"> -->
+
+<head>
+    <title>Wi-Fi传输</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <link href="css/main.css" rel="stylesheet" type="text/css" charset="utf-8">
+    <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.inlineedit.js"></script>
+    <script type="text/javascript" src="js/bitcandies.FileUploader.js"></script>
+    <script type="text/javascript" src="js/jquery.blockUI.js"></script>
+    <script type="text/javascript" src="js/Utils.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="main clearfix">
+            <div class="left">
+                <b>Wi-Fi 模式已开启</b>
+                <p>手机与电脑务必在同一Wi-Fi内，传输过程中请勿关闭手机上的Wi-Fi传输页面</p>
+            </div>
+            <div class="right">
+
+                <li>
+                    <a href="javascript:void(0);" class="btn_1">
+                        <input type="file" name="newfile" value="" id="newfile_0" multiple="multiple">
+                    </a>
+                    <a href="javascript:void(0);" class="btn_2" id="reupload" style="display: none;"></a>
+                </li>
+                <li>
+                    <button id="createFolder">新建文件夹</button>
+
+
+                </li>
+            </div>
+            <div style="display: none;">
+            </div>
+        </div>
+        <div class="content" id="drag_area">
+            <b class="b_1"></b>
+            <b class="b_2"></b>
+
+            <ul id="mainpath">
+
+                <li>
+                    <a data-mainpath="/upload/" tile="Home">
+                        <img src="img/home.png" alt="Home" class="home">
+                    </a>
+                </li>
+                <li>Product</li>
+            </ul>
+
+            <p>
+
+                <span class="tit_0">&nbsp;</span>
+
+                <span class="tit_1">文件名</span>
+                <span class="tit_2">文件大小</span>
+                <span class="tit_3">日期</span>
+                <span class="tit_4">操作</span>
+            </p>
+
+            <ul id="fileList">
+
+                <li>
+                    <span class="li_0">
+                        <input type="radio" name="radio" id="radio1" value="1" />
+                    </span>
+                    <span class="li_1" data-isdir="0">文件名</span>
+                    <span class="li_2">文件大小</span>
+                    <span class="li_3">日期</span>
+                    <span class="li_4">操作</span>
+                </li>
+                <li>
+                    <span class="li_0">
+                        <input type="radio" name="radio" id="radio1" value="1" />
+                    </span>
+                    <span class="li_1" data-isdir="0">文件名</span>
+                    <span class="li_2">文件大小</span>
+                    <span class="li_3">日期</span>
+                    <span class="li_4">操作</span>
+                </li>
+            </ul>
+            <b class="b_3"></b>
+            <b class="b_4"></b>
+        </div>
+    </div>
+    <input id="currentPath" type="hidden" value="/upload/" />
+    <div id="showmodel" style="display:none;">
+        <h2>请选择</h2>
+        <ul id="dirList">
+        <li><span class="li_3"><input type="radio" name="group1" value="Milk"> Milk </span></li>
+        <li><span class="li_3"><input type="radio" name="group1" value="Milk1"> Milk1 </span></li>
+        <li><span class="li_3"><input type="radio" name="group1" value="Milk2"> Milk2 </span></li>
+        <li><span class="li_3"><input type="radio" name="group1" value="Milk3"> Milk3 </span></li>
+        </ul>
+        <button id="confirmMove">确定</button>
+        <button id="cancelMove">取消</button>
+    </div>
+     <input id="moveSrc" type="hidden" value="" />
+      <input id="moveFileId" type="hidden" value="" />
+</body>
+
+</html>
