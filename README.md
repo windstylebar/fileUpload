@@ -5,4 +5,7 @@
 
 # dependencies
 
+   The interface of fileUpload is coming from [qq阅读](http://book.qq.com/act/reader/index.html)
    [CocoaHTTPServer](https://github.com/robbiehanson/CocoaHTTPServer)
+   
+   
